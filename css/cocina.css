@@ -1,0 +1,54 @@
+video { 
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-image: ur
+  background-size: cover;
+  transition: 1s opacity;
+ -webkit-filter: blur(4px);
+}
+
+@font-face {
+    font-family: "LavanderiaSturdy.otf";
+    src: url(../fonts/LavanderiaSturdy.otf) ;
+}
+
+#Titulo {
+    color:  #fff;
+    font-family: "LavanderiaSturdy.otf";
+    font-size:180px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#TituloPostres {
+
+    color:  #000;
+    font-family: "LavanderiaSturdy.otf";
+    font-size:30px;
+    text-align: center;
+}
+
+#thumbnailContainer
+{
+margin-top:160px;"
+}
+
+
+.Center{
+  text-align:center;
+}
+
+
+
+
+
+
+
+
+
