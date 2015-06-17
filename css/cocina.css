@@ -1,4 +1,4 @@
-video { 
+/*video { 
   position: fixed;
   right: 0;
   bottom: 0;
@@ -7,10 +7,14 @@ video {
   width: auto;
   height: auto;
   z-index: -100;
-  background-image: ur
   background-size: cover;
   transition: 1s opacity;
  -webkit-filter: blur(4px);
+}*/
+
+video { 
+ width: 100%;
+ position: absolute;
 }
 
 @font-face {
@@ -36,12 +40,19 @@ video {
 
 #thumbnailContainer
 {
-margin-top:160px;"
+margin-top:160px;
+position:     absolute;
 }
 
 
 .Center{
   text-align:center;
+}
+
+#First
+{
+      height: 926px;
+
 }
 
 
