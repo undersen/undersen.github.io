@@ -23,7 +23,5 @@ function GitHub(){
 function ViewMeonGitHub(){
 	window.open('https://github.com/undersen/Cocina')
 }
-function Postres(){
-	window.open('Postres.html')
-}
+
 

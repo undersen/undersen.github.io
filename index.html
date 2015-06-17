@@ -11,7 +11,8 @@
 
  
     <!-- Jquery Reference -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
     <!-- Angular App -->
     
     <!-- others JS -->
@@ -22,18 +23,28 @@
     <script src="js/fileinput.min.js" type="text/javascript"></script>
 
     <script src="js/modernizr.custom.js" type="text/javascript" ></script>
-
+    <script src="js/jSGoogleMaps.js" type="text/javascript" ></script>
+ <script src="js/parallax.js" type="text/javascript" ></script>
 
     <link rel="stylesheet" href="css/fileinput.min.css" media="all" type="text/css" />
     <link rel="stylesheet" href="css/cssMaster.css" type="text/css"/>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css"/>
+    <link rel="stylesheet" href="css/cssParallax.css" type="text/css"/>
 <!-- icons -->
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"  />
  
 </head>  <!-- End Head-->
 <body>
+  <title>AboutMe!</title>
+    <style type="text/css">
+        #map_canvas {
+            height: 450px;
+        }
+    </style>
+
+
   <div id="First">
 <video autoplay id="CocinaVideo" loop>
     <source src="media/salad.webm" type='video/webm; codecs="vp8, vorbis"'  />
@@ -121,7 +132,7 @@
         <br>
         <input type="text" class="form-control" placeholder="Video de YouTube" />
         <br>
-        Forografia
+        Fotografia
         <br>
           <div class="form-group">
             <input id="file-0b" class="file" accept="image/*" type="file" placeholder="Elegir fotografia" >
@@ -137,8 +148,7 @@
 
 </div>
 
-
-    
+<div id="Second"> 
 <div class="row " id="thumbnailContainer">
 
 <div id="top">
@@ -201,80 +211,28 @@
 </div>
 </div>
 
-
-
-<div class="modal fade" id="myModal" tabindex="-1" data-keyboard="true">
-  <div class="modal-dialog">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="panel panel-default">
-          <div class="modal-title">
-              <h1 id="TituloPostres">
-              Copas de Chocolate
-              </h1>
-          </div>
-        </div>
-          <div class="panel panel-default">
-            <div class="modal-body">
-             <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" width="530" height="315" src="https://www.youtube.com/embed/SyvkH_6bKDk?rel=0&showinfo=0"  ></iframe> 
-                </div>
-            </div>
-          </div>
-        </div>
-           <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <h4 style="margin:5px;">Ingredientes :</h4>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        <dl class="dl-horizontal " >
-                      <dt> 1 taza </dt><dd>de chocolate oscuro</dd>
-                      <dt> 1 taza </dt><dd>de crema</dd>
-                      <dt> 3 cucharadas</dt> <dd>de azucar flor</dd>
-                      <dt> 1 vaina </dt> <dd>de vainilla</dd>
-                      <dt> Un puñado </dt> <dd>Frambuesa y arandanos</dd>
-                      <dt> 3-4 globos </dt> <dd>Globos</dd>
-                  </dl>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
- <div class="panel panel-default">
-       <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#pasos" aria-expanded="false" aria-controls="pasos">
-            <h4 style="margin:5px;">Pasos :</h4>
-        </a>
-      </h4>
-    </div>
-    <div id="pasos" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-       <ul>
-                  <li>Inflar los globos, tratando que sean del mismo tamaño.</li>
-                  <li>Derretir 3/4 del chocolate oscuro a baño maria.</li>
-                  <li>Retirar el chocolate del baño maria y colocar el 1/4 de chocolate restante, este procedimeinto se llama temperar.</li>
-                  <li>Untar los globos por debajo de la mitad, colocarlos en una superficie que sea facil de retirar.</li>
-                  <li>Dejarlos Reposar en el refrigerador.</li>
-                  <li>Abrir la vaina de vainilla y raspar su interior.</li>
-                  <li>Batir la crema en conjunto con la vainilla y colocar en una manga de decoracion </li>
-                  <li>Retirar las copas de chocolate , hacer un pequeño corte a la altura del moño del globo</li>
-                  <li>Colocar la crema en las copas de chocolate , colocar arandanos y frambuesas, decorar a gusto!.</li>
+</div>
+  </div> <!-- end Second-->
 
-                  </ul>
-      </div>
-    </div>
-  </div>
 
-        </div>
-      </div>
-    </div>
 
-    <div id="AboutMe">
-
+    <div id="Third">
       <div id="LoQueMeGusta">
         <h1>Aficiones</h1>
         <p>
@@ -285,6 +243,26 @@
         <p>Me gusta diseñar Paginas, ver lo ultimo en tecnologias , revisar plugins, desde pequeño desarmar cosas</p>
         
     </div>
+
+
+
+<div class="modal fade" id="ModalMaps" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">google Maps</h4>
+      </div>
+      <div class="modal-body">
+         <div id="map_canvas"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <main>
             <section class="module parallax parallax-1">
                 <div class="container">
@@ -296,7 +274,7 @@
                      <h2 class="segoe">Experiencia Universitaria</h2>
                     <p>Comenze a programar antes de entrar a la universidad y quede mal cuando hize mi primer "Hola Mundo&nbsp;<i class="glyphicon glyphicon-globe"></i>" con Python, cuando sume 2 variables y esta me daba el resultado correcto, pense para mi mismo y dije esto es lo que quiero, luego entre a la Universidad y Comenze con Java y MySql, me encantaba la versatilidad y siempre me quedo en la sien lo que dijo un profesor "El Computador es el tonto obediente, si el se equivoca ustedes se equivocaron el doble"</p>
                     <p>Luego Comenzamos a ver Desarrollo Web el cual odie, las Conexiones con Sql Server , tener que conocer HTML5, cSharp, y ademas las consultas pense que era mucho, pero luego me dijeron ahora vamos a aplicar estilos y algo llamado JavaScript y ahi comenzo a ser mas entretenido a mi parecer, aunque eran muchas cosas era increible lo que se podia lograr tecleando, buscando imagenes, videos, audios, enfin, enriqueciendo la pagina</p>
-                  &nbsp;<a href="#" data-toggle="modal" data-target="#Malla">   Click aca para ver mi malla <i class="glyphicon glyphicon-list"></i></a>
+                  &nbsp;<a href="#" data-toggle="modal" data-target="#aa">   Click aca para ver mi malla <i class="glyphicon glyphicon-list"></i></a>
                     
                     
                 </div>
@@ -310,6 +288,8 @@
                 <div class="container ">
                     <h2>Projects </h2>
                     <p>Trabaje para la primicia FiveSides de tecnico para la empresa NCRpor aproximadamente 6 meses, viajando por todo chile realizando desde cambio de SO hasta implementacion de Factura Electronica, realizando la implementacion en Ripley e Hites. Durante este proceso se desarrollaba paralelamente una aplicacion web de <a href="#" data-toggle="tooltip" data-placement="top" title="Con la suite de Adobe Captivate">E-Learning</a> la cual no vio la luz del dia por malas gestiones.  </p>
+
+
                 </div>
             </section>
             <section class="module parallax parallax-3">
@@ -336,6 +316,16 @@
         </section>
         </main>
 
+
+      </div>
+ <footer style="position:absolute;">
+  
+  <div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+</footer>
     <!-- /main -->
 
     <div class="modal fade" id="ModalMaps">
@@ -354,8 +344,6 @@
         </div>
     </div>
     <!-- Modal de GoogleMAps-->
-
-
 
     <div class="modal fade" id="Formulario">
         <!-- Modal de Formulario-->
@@ -378,13 +366,18 @@
     <!-- Modal de Formulario-->
     
 
-    <div class="modal fade" id="Malla">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content" style="width: 1000px;">
-                <div class="modal-header">
-                    <h4>Mi Malla de Ingenieria <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></h4>
-                </div>
-                <div class="modal-body" style="margin-bottom: 5px;">
+
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="aa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+    
+        <div class="modal-body" style="margin-bottom: 5px;">
                     <div class="table-responsive">
                         <table class="table table-bordered" style="height: 100px;">
                             <thead>
@@ -584,31 +577,19 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-            </div>
-        </div>
+                
+      </div>
+     
     </div>
+  </div>
+</div>
 
-     <div class="modal fade" id="tweet">
-        <!-- Modal de Formulario-->
-        <div class="modal-dialog ">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"><i class="fa fa-twitter"></i></i>&nbsp;Twitter</h4>
-                </div>
-                <div class="modal-body" >
-                    <center><a class="twitter-timeline" href="https://twitter.com/UnderDiaz" data-widget-id="550155163550629888">Tweets por @UnderDiaz.</a></center>
-                </div>
-               
-            </div>
-        </div>
-    </div>
 
-    </div>
 
    
 
+   
 
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"> </script>
 </body>
 </html>

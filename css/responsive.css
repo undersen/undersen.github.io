@@ -49,10 +49,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-size:45px !important;
   margin-top:30% !important;
   }
-video{
-  right: -500px;
-  bottom: -30px;
-}
+
 
 .form-control {
   height: 20px;
