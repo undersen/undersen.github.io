@@ -40,8 +40,17 @@ video {
 
 #thumbnailContainer
 {
-margin-top:160px;
-position:     absolute;
+
+position: absolute;
+background-image: url("../media/background2.jpg");
+height: 1000px;
+background-repeat: no-repeat;
+
+}
+
+#top
+{
+margin:100px;
 }
 
 
