@@ -5,7 +5,7 @@
 
   <!--Metadata -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
 
 
@@ -45,11 +45,14 @@
     </style>
 
 
-  <div id="First">
-<video autoplay id="CocinaVideo" loop>
-    <source src="media/salad.webm" type='video/webm; codecs="vp8, vorbis"'  />
-    <source src="media/salad.mp4"type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
-  </video>
+ <div id="video-container">
+<video autoplay loop class="fillWidth">
+<source src="media/salad.mp4" type="video/mp4"/>
+<source src="media/salad.webm" type="video/webm"/>
+Your browser does not support the video tag. I suggest you upgrade your browser.
+</video>
+</div><!-- end video-container -->
+</div><!-- end .header-unit -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -96,9 +99,6 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <!--Video-->
-  
-  <!-- Video -->
   <div id="Titulo" class="animated bounceInUp">CocinArte</div>
   <br>
   <div class="row">
@@ -112,7 +112,7 @@
        <button class="btn btn-transparent " onclick="GitHub()" role="button">GitHub&nbsp; <i class="fa fa-github"></i></button>
      </div>
    </div>
-   <div class="col-md-4col-sm-4 col-xs-1"></div>
+   <div class="col-md-4 col-sm-4 col-xs-1"></div>
  </div>
 
  <!-- Button trigger modal -->
@@ -146,7 +146,6 @@
   </div>
 </form>
 
-</div>
 
 <div id="Second"> 
 
