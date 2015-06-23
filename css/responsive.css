@@ -16,6 +16,10 @@ display: none;
 #Titulo {
     font-size: 50px;
 }
+h3,
+.h3 {
+  font-size: 20px;
+}
 
 }
 
@@ -35,6 +39,10 @@ display: none;
 #Titulo {
     font-size: 50px;
 }
+h3,
+.h3 {
+  font-size: 20px;
+}
 }
 
 @media screen and (min-width:640px) and (max-width:959px) {
@@ -45,6 +53,23 @@ display: none;
   section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 40px !important;  
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#Titulo {
+    font-size: 50px;
+}
+
+}
+
+@media screen and (min-width:960px) and (max-width:1024px) {
+
+  section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 100px !important;  
   line-height: 600px;
   font-weight: 700;
   text-align: center;
