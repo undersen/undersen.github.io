@@ -1,20 +1,33 @@
 /*videoSettings*/
-#video-container {
-  top:0%;
-  left:0%;
-  height:100%;
-  width:100%;
-  overflow: hidden;
-  position: absolute;
-}
-video {
-  position:absolute;
-  z-index:0;
-}
-video.fillWidth {
+#videoBackGround {
   height: 100%;
+  width: 100%;
+  position: absolute;
+  min-height: 840px !important;
+  bottom: 0px;
+  top: 0px;
 }
 
+video {
+   margin: auto;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  width: 2024px;
+  height: auto;
+}
+
+
+#cocinArte
+{
+    height: 100%;
+    min-height: 840px !important;
+    overflow: hidden;
+}
 
 /*FontFamily*/
 @font-face {
