@@ -12,34 +12,54 @@
 </head>
 <body onload="loadProducts();">
 
+  <nav class="blue darken-1">
+    <div class="nav-wrapper">
+      <a href="#" data-activates="navigation-drawer" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="bold">
+          <div class="input-field">
+            <input id="pac-input" type="text" placeholder="Ingrese direcci&oacute;n" >
+            <label for="search"><i class="material-icons">search</i></label>
+          </div>
+        </li>
+        <li class="bold">
+          <a href="#modal-pedidos" class="waves-effect waves-blue  modal-trigger">Crear pedido</a>
+        </li>
+        <li class="bold">
+          <a class="waves-effect waves-blue" href="orders.html">Ver pedidos</a>
+        </li>
+        <li class="bold">
+          <a href="#modal-productos" class="waves-effect waves-blue modal-trigger">Ver productos</a>
+        </li>
+        <li class="bold">
+          <a href="showcase.html" class="last" >Cerrar Session</a>
+        </li>
+      </ul>
 
-  <ul id="nav-mobile" class="side-nav fixed">
-    <li class="search">
+      <ul class="side-nav" id="navigation-drawer">
+        <li class="blue darken-2">
+          <div class="input-field blue darken-2">
+            <input id="search" type="text" placeholder="Ingrese direcci&oacute;n" >
+            <label for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </li>
+        <li class="bold">
+          <a href="#modal-pedidos" class="waves-effect waves-blue  modal-trigger">Crear pedido.</a>
+        </li>
+        <li class="bold">
+          <a class="waves-effect waves-blue" href="orders.html">Ver pedidos realizados.</a>
+        </li>
+        <li class="bold">
+          <a href="#modal-productos" class="waves-effect waves-blue modal-trigger">Ver productos.</a>
+        </li>
+        <li class="bold">
+          <a href="showcase.html" class="last" >Cerrar Session</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-      <div class="input-field col s12">
-        <input id="pac-input" class="" type="text"
-        placeholder="Ingrese direcci&oacute;n"></input>
-        </div>
-   </li>
-    <li class="bold">
-
-    <a href="#" class="waves-effect waves-teal  " onClick="getMyPosition();" >como llegar.</a>
-
-    </li>
-    <li class="bold">
-      <a href="#modal-pedidos" class="waves-effect waves-teal  modal-trigger">Crear pedido.</a>
-    </li>
-    <li class="bold">
-      <a class="waves-effect waves-teal" href="orders.html">Ver pedidos realizados.</a>
-    </li>
-    <li class="bold">
-      <a href="#modal-productos" class="waves-effect waves-teal modal-trigger">Ver productos.</a>
-    </li>
-
-    <li class="bold">
-      <a href="showcase.html" class="last" >Cerrar Session</a>
-    </li>
-  </ul>
   <div id="container">
     <div id="map"></div>
   </div>
@@ -47,43 +67,97 @@
 
   <div id="modal-pedidos" class="modal">
     <div class="modal-content">
-      <h4>Creacion de pedidos</h4>
+      <h4>agregar pedido</h4>
+      <hr />
+      <br />
 
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="juan" id="first-name" type="text" class="validate">
+          <label for="first-name">ingresa tu nombre</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="bazar 1" id="store-name" type="text" class="validate">
+          <label for="store-name">ingresa nombre de local</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="direccion" id="address" type="text" class="validate">
+          <label for="address">ingresa direccion del local</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="comuna" id="commune" type="text" class="validate">
+          <label for="commune">ingresa la comuna del local</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="producto" type="text" class="validate product">
+          <label for="active">ingresa nombre del producto</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="producto" type="text" class="validate product">
+          <label for="active">ingresa nombre del producto</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="producto" type="text" class="validate product">
+          <label for="active">ingresa nombre del producto</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="producto" type="text" class="validate product">
+          <label for="active">ingresa nombre del producto</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="precio total" id="totalAmount" type="text" class="validate" readonly="readonly">
+          <label for="totalAmount">precio total</label>
+        </div>
+      </div>
     </div>
 
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Finalizar Pedido</a>
-
+    <div class="modal-footer" id="btn-add-order-container">
+      <a href="#!" class="waves-effect waves-blue btn-flat btn-add-order">Finalizar Pedido</a>
     </div>
+
+    <div class="modal-footer hide" id="btn-send-order-container">
+      <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat btn-send-order">Enviar Pedido</a>
+    </div>
+
   </div>
-
-
-
-
 
   <div id="modal-productos" class="modal">
     <div class="modal-content">
       <h4>Productos ingresados</h4>
-      	<div class="products-container" id="products-container"></div>
+      <div class="products-container" id="products-container"></div>
     </div>
 
     <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-blue btn-flat">Cerrar</a>
 
     </div>
   </div>
 
-
-
-
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=places&callback=init" async defer type="text/javascript"></script>
+  <script src="http://maps.google.com/maps/api/js?libraries=places" type="text/javascript"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/create_orders.js"></script>
   <script type="text/javascript" src="js/googleMaps.js"></script>
   <script type="text/javascript" src="js/products_detail.js" ></script>
+
 
   <script>
    $('.button-collapse').sideNav('show');
