@@ -15,6 +15,7 @@
 <title>Estadio Español</title>
 
 </head>
+<<<<<<< HEAD
 <body>
 
 <div class="flipbook-viewport">
@@ -78,5 +79,90 @@ yepnope({
 
 
 
+=======
+<body onload="loadProducts();">
+
+
+  <ul id="nav-mobile" class="side-nav fixed">
+    <li class="search">
+
+      <div class="input-field col s12">
+        <input id="pac-input" class="" type="text"
+        placeholder="Ingrese direcci&oacute;n"></input>
+        </div>
+   </li>
+    <li class="bold">
+
+    <a href="#" class="waves-effect waves-teal  " onClick="getMyPosition();" >como llegar.</a>
+
+    </li>
+    <li class="bold">
+      <a href="#modal-pedidos" class="waves-effect waves-teal  modal-trigger">Crear pedido.</a>
+    </li>
+    <li class="bold">
+      <a class="waves-effect waves-teal" href="orders.html">Ver pedidos realizados.</a>
+    </li>
+    <li class="bold">
+      <a href="#modal-productos" class="waves-effect waves-teal modal-trigger">Ver productos.</a>
+    </li>
+
+    <li class="bold">
+      <a href="showcase.html" class="last" >Cerrar Session</a>
+    </li>
+  </ul>
+  <div id="container">
+    <div id="map"></div>
+  </div>
+
+
+  <div id="modal-pedidos" class="modal">
+    <div class="modal-content">
+      <h4>Creacion de pedidos</h4>
+
+    </div>
+
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Finalizar Pedido</a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <div id="modal-productos" class="modal">
+    <div class="modal-content">
+      <h4>Productos ingresados</h4>
+      	<div class="products-container" id="products-container"></div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+
+    </div>
+  </div>
+
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=places&callback=init" async defer type="text/javascript"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/googleMaps.js"></script>
+  <script type="text/javascript" src="js/products_detail.js" ></script>
+
+  <script>
+   $('.button-collapse').sideNav('show');
+   $('.button-collapse').sideNav('hide');
+   $(document).ready(function(){
+      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+      $('.modal-trigger').leanModal();
+    });
+  </script>
+>>>>>>> parent of cfa1ef5... preview
 </body>
 </html>
