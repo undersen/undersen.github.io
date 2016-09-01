@@ -1,0 +1,63 @@
+ #LoQueMeGusta { 
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  margin:2rem;
+  float: right;
+  font-size: 16px;
+  position:relative;
+}
+
+
+#centralizador{
+  text-align: center;;
+}
+
+
+ @media screen and (max-width:320px) {
+
+ 	#LoQueMeGusta {
+display: none;
+ 	}
+ 
+  section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.module.parallax h1 {
+    font-size: 70px;
+  }
+
+
+}
+
+@media screen and (min-width:321px) and (max-width:639px) {
+#LoQueMeGusta {
+display: none;
+ 	}
+ 	section.module.parallax h1 {
+    font-size: 70px;
+  }
+
+ 
+
+}
+
+@media screen and (min-width:640px) and (max-width:959px) {
+
+#LoQueMeGusta {
+display: none;
+ 	}
+ 	section.module.parallax h1 {
+    font-size: 70px;
+  }
+
+}
