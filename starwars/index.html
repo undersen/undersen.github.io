@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	
+  	
+	<title>Star Wars</title>
+</head>
+<body>
+	
+	<div id="videoDiv">
+
+		<video id="videoIntro" autobuffer="autobuffer" preload="preload">
+	    <source src="video/starwars.webm" type='video/webm; codecs="vp8, vorbis"'></source>
+	    </video>
+	    </div>
+	
+	<div class="cd-background-wrapper">
+		<figure class="cd-floating-background">
+			<img src="img/cd-img-1.jpg" alt="image-1">
+			<img src="img/cd-img-2.png" alt="image-2">
+			<img src="img/cd-img-3.png" alt="image-3">
+		</figure>
+	</div>
+
+	
+
+
+
+
+
+<!--Modal windows-->
+<!--
+<div class="modal fade" id="ModalTie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      <canvas id="cv" style="border: 1px solid;" width="490" height="368" ></canvas>
+    </div>
+  </div>
+</div>
+</div>-->
+
+
+<script type="text/javascript">
+	var vid = document.getElementById('videoIntro');
+vid.pause();
+window.onscroll = function() {
+  vid.currentTime = window.pageYOffset / 200;
+};
+</script>
+
+<!-- end modal windows-->
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> 
+<script type="text/javascript" src="js/jsc3d/jsc3d.js"></script>
+<script type="text/javascript" src="js/jsc3d/jsc3d.webgl.js"></script>	
+<script type="text/javascript" src="js/jsc3d/jsc3d.touch.js"></script>
+<script type="text/javascript" src="js/ModelJS/falcon.js"></script>
+
+
+
+
+</body>
+</html>

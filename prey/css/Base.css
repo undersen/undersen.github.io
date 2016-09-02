@@ -1,0 +1,26 @@
+body{
+background-color: #0E618F;
+}
+
+
+#Image{
+	width: 50%;
+	min-width: 75px;
+	padding-top: 30px;
+}
+
+a{
+	width: 154px;
+	margin: 10px;
+}
+
+blockquote {
+
+  font-size: 15px;
+
+}
+
+#parameter
+{
+margin:10px;
+}

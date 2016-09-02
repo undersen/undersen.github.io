@@ -1,0 +1,89 @@
+@media screen and (max-width:320px) {
+  h3, .h3 {
+  font-size: 8px;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 8px;
+ 
+}
+#thumbnailContainer
+	{
+	margin:0px;"
+	}
+	h4, .h4 {
+  font-size: 12px;
+}
+.thumbnail {
+
+  padding: 1px;
+}
+.thumbnail .caption {
+   padding: 1px;
+  color: #333;
+}
+  .navbar-brand {
+  font-size: 20px;
+}
+.panel-heading {
+  padding: 1px 1px;
+}
+dl {
+  margin-bottom: 5px;
+}
+.panel {
+  margin-bottom: 5px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 5px;
+  margin-bottom: 2.5px;
+}
+.panel-body {
+  padding: 5px,5px,5px,15px;
+}
+.dropdown-menu {
+  font-size: 8px;
+}
+#Titulo
+  {
+  font-size:45px !important;
+  margin-top:30% !important;
+  }
+video{
+  right: -500px;
+  bottom: -30px;
+}
+
+.form-control {
+  height: 20px;
+  font-size: 10px;
+}
+.btn {
+  padding: 4px 6px;
+  font-size: 10px;
+  margin: 5px;
+}
+
+
+}
+
+
+@media screen and (min-width:321px) and (max-width:639px) {
+
+ #Titulo
+  {
+  
+  font-size:70px !important;
+  margin-top:20% !important;
+  }
+
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+
+ #Titulo
+  {
+  font-size:110px !important;
+  margin-top:10% !important;
+  }
+}
+
